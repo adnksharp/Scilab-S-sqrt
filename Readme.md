@@ -1,17 +1,19 @@
-# Sqrt
+# Librería para obtener raices de números psitivos.
 
-Obtener raices con iteraciones en Scilab. Para esto se hace uso de tres variables:
+Uso de iteraciones para obetener la raíz de un número positivo. 
 
-| Variable | Función |
-| -------- | ------- |
-| sqrt | Variable que se usara para guardar la raiz calculada |
-| cache | Variable que se usara para guardar el resultado de la raiz anterior |
-| x | Variable de la que se desea obtener la raiz |
+Tomando en cuenta un número $x$, la forma de obtener su raíz es mediante un bucle en el que una variable $y$ aunmenta con cada iteración hasta que da como resultado el valor de $x$ o algo muy cercano. 
 
-###### Importante: Uso de Scilab 6.1.1. En la versión 5 de Scilab el codigo puede no funcionar debido a que en esa versión no existe ```sqrt``` (sustituido en la versión 6.1.1 por ```sqroot```) es una función del lenguaje.
+Para esta libreria se ah establecido una tolerancia del 0.01% de error.
 
-```
-Raiz de: 2158.1025
- 
-Raiz de 2158.102500 = 46.455382
+### Ejemplo de uso 
+
+```Octave
+--> exec ('square.sci', -1)
+
+--> sqn(12)
+ ans  =
+
+   3.4641017
+
 ```
